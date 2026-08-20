@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Event Registration Portal</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .welcome-note {
+            text-align: center;
+            padding: 10px;
+            background: #eef5ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Saveetha University</h1>
+        <p>University Event Registration Portal</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Join Our Exciting Events!</h2>
+        <p>Technical, Cultural, Sports and Placement Events</p>
+
+        <!-- Inline CSS demonstration -->
+        <button style="font-weight: bold;" onclick="location.href='#register'">
+            Register Now
+        </button>
+    </section>
+
+    <!-- Internal CSS section -->
+    <section class="welcome-note">
+        <p>Registration is open for all students.</p>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+        <h2 class="section-title">Upcoming Events</h2>
+
+        <div class="event-container">
+
+            <article class="event-card">
+                <span class="status">Open</span>
+                <h3>Tech Hackathon</h3>
+                <p><strong>Category:</strong> Technical</p>
+                <p><strong>Date:</strong> 20 August 2026</p>
+                <p><strong>Time:</strong> 9:00 AM</p>
+                <p><strong>Venue:</strong> Computer Lab</p>
+                <p>Build innovative software solutions and compete with other students.</p>
+                <button>Register</button>
+            </article>
+
+            <article class="event-card">
+                <span class="status">Open</span>
+                <h3>Cultural Fest</h3>
+                <p><strong>Category:</strong> Cultural</p>
+                <p><strong>Date:</strong> 25 August 2026</p>
+                <p><strong>Time:</strong> 10:00 AM</p>
+                <p><strong>Venue:</strong> Auditorium</p>
+                <p>Show your talent through music, dance and cultural performances.</p>
+                <button>Register</button>
+            </article>
+
+            <article class="event-card">
+                <span class="status">Open</span>
+                <h3>Placement Training</h3>
+                <p><strong>Category:</strong> Placement</p>
+                <p><strong>Date:</strong> 28 August 2026</p>
+                <p><strong>Time:</strong> 2:00 PM</p>
+                <p><strong>Venue:</strong> Seminar Hall</p>
+                <p>Improve your interview, communication and aptitude skills.</p>
+                <button>Register</button>
+            </article>
+
+            <article class="event-card">
+                <span class="status">Open</span>
+                <h3>Sports Meet</h3>
+                <p><strong>Category:</strong> Sports</p>
+                <p><strong>Date:</strong> 30 August 2026</p>
+                <p><strong>Time:</strong> 8:00 AM</p>
+                <p><strong>Venue:</strong> University Ground</p>
+                <p>Participate in exciting athletic and team sports competitions.</p>
+                <button>Register</button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="registration">
+        <h2 class="section-title">Student Registration</h2>
+
+        <form>
+            <label for="name">Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="regno">Register Number</label>
+            <input type="text" id="regno" placeholder="Enter register number" required>
+
+            <label for="department">Department</label>
+            <input type="text" id="department" placeholder="Enter department" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+
+            <label for="event">Select Event</label>
+            <select id="event" required>
+                <option value="">-- Select Event --</option>
+                <option>Tech Hackathon</option>
+                <option>Cultural Fest</option>
+                <option>Placement Training</option>
+                <option>Sports Meet</option>
+            </select>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: events@university.edu</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>&copy; 2026 University Event Portal</p>
+    </footer>
+
+    <!-- Fixed Help Button -->
+    <a href="#register" class="help-button">?</a>
+
+</body>
+</html>
